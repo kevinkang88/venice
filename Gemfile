@@ -4,10 +4,13 @@ gem 'rails', '3.2.18'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-
+gem 'json'
+gem 'pry'
+gem 'activeresource'
 gem 'slim-rails'
 gem 'slim'
+gem 'rest-client'
+gem 'activerecord'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
