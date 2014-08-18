@@ -1,0 +1,11 @@
+<%# h1 Promotions %>
+<%# = @all_promo_titles.each do |title| %>
+<%# p = title %>
+
+
+<%# below is the erb.html above code currently showing the returned array at the end %>
+
+<h1> Promotions </h1>
+<% @all_promo_titles.each do |title| %>
+  <a href="#"> <%= title %> </a>
+<% end %>
