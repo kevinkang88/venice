@@ -8,7 +8,6 @@ class Promotion < ActiveResource::Base
 
   def get_promo_titles
     titles = []
-    # require 'pry'; binding.pry
     parsed_promos = self.get_all_promos
     parsed_promos['data'].each{|x| titles << x['title']}
     titles
