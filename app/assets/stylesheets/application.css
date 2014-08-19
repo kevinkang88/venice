@@ -17,8 +17,12 @@
 
 /*this is applicable for all pages*/
 body {
-  padding-top: 20px;
+  padding-top: 35px;
   background-color: #F2F2F2;
 }
 
+#nav-logo {
+  width: 30px;
+  height: auto;
+}
 /**********************************/
