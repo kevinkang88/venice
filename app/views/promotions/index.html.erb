@@ -6,6 +6,6 @@
 <%# below is the erb.html above code currently showing the returned array at the end %>
 
 <h1> Promotions </h1>
-<% @all_promo_titles.each do |title| %>
-  <a href="#"> <%= title %> </a>
+<% @all_promo_titles.each do |title,id| %>
+  <%= link_to(title,promotions_path(id)) %><br>
 <% end %>

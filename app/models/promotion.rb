@@ -7,10 +7,11 @@ class Promotion < ActiveResource::Base
   end
 
   def get_promo_titles
-    titles = []
+    title_ids = {}
     parsed_promos = self.get_all_promos
-    parsed_promos['data'].each{|x| titles << x['title']}
-    titles
+    parsed_promos['data'].each{|x| title_ids[x['title']] = x['id']}
+    # the output hash key, is the title and the value is the id of the book
+    title_ids
   end
 
   protected
