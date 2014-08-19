@@ -6,7 +6,9 @@ class PromotionsController < ApplicationController
   end
 
   def show
-
+    promo_id = params['id']
+    # require 'pry'; binding.pry
+    @promo_details = Promotion.get_promo_details(promo_id)
   end
 
 end
