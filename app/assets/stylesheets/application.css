@@ -93,6 +93,67 @@ span {
     -webkit-transition: all 0.5s;
 }
 .four-box:hover:after {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    position: relative;
+    z-index: -1;
     opacity:0;
 }
 
+#creator {
+  /*color:#666666;*/
+  color:white;
+  margin-bottom: 13px;
+}
+
+#name {
+  /*color:#666666;*/
+  color:white;
+  margin-bottom: 1px;
+}
+#title {
+  color:white;
+  /*color:#666666;*/
+
+}
+
+#about-me-info {
+  margin-left: 30px;
+}
+
+/*a {
+  position: relative;
+  z-index: 100000;
+}*/
+/**********************************/
+
+
+/* this is for detailed promopage*/
+
+.description {
+  font-size: 15px;
+  color: gray;
+}
+
+.current-price {
+  border: 3px solid red;
+  width: 120px;
+  font-weight: bolder;
+}
+
+.inner-price {
+  margin: auto auto;
+  width: 5.5em;
+  padding: 1px 0;
+}
+
+.old-price {
+  color:black;
+}
+
+.outer-old-price {
+  text-decoration: line-through;
+  color: red;
+  font-weight:bolder;
+}
+/**********************************/
