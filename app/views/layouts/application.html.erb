@@ -4,9 +4,12 @@
   <title>Venice</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "jquery-ui.js" %>
+
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class=<%="full" if @body_class %>>
+<div class="container">
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -20,19 +23,22 @@
       </div>
 
 
-      <div class="collapse navbar-collapse" id="navbar-collapse-menu">
-        <ul class="nav navbar-nav">
+      <div class="collapse navbar-collapse" id="navbar-collapse-menu nav-stuff">
+        <ul class="nav navbar-nav nav-link">
           <li>
             <a href="/about">About</a>
           </li>
           <li>
-            <a href="/promotions">Promotions</a>
+            <a href="/promotions">Promotions</a><span class="badge badge-important"><%= promo_count %></span>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <%= yield %>
 
+  <%= yield %>
+</div>
 </body>
 </html>
+
+
