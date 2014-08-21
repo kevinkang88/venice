@@ -7,6 +7,7 @@
 
 Venice School was built to demonstrate the use of simple partials,
 APIs, widgets, simple front end frameworks, and templating engine in Rails.
+User is Able to see the list of current promotions, and purchase them  
 
 ## Technologies behind Venice School
 
