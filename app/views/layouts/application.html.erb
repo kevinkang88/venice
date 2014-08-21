@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Venice</title>
+  <title>Venice School</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "jquery-ui.js" %>
-
   <%= csrf_meta_tags %>
 </head>
 <body class=<%="full" if @body_class %>>
@@ -43,6 +43,9 @@
 
   <%= yield %>
 </div>
+  <!-- stripe scripts -->
+  <script src="https://checkout.stripe.com/checkout.js"></script>
+  <script id='jsStripePurchaser' src='http://assets.webappcamp.ws/js/stripe-purchaser.js' data-referred-by='PlATTZXdnq3FbrH5cdC1fQ'></script>
 </body>
 </html>
 
