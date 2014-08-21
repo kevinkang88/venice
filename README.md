@@ -10,14 +10,14 @@ APIs, widgets, simple front end frameworks, and templating engine in Rails.
 
 ## Technologies behind Venice School
 
-*Ruby on Rails
-*Stripe Gem
-*Bootstrap
-*Slim
-*Rest-client
+* Ruby on Rails
+* Stripe Gem
+* Bootstrap
+* Slim
+* Rest-client
 
 ## Interesting code
 
-*RESTFUL routing
-*Promotion model created to explicitly handle get requests to the API
-*Promotions#show partial that gets displayed in Index page using AJAX
+* RESTFUL routing
+* Promotion model created to explicitly handle get requests to the API
+* Promotions#show partial that gets displayed in Index page using AJAX
