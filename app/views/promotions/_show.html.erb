@@ -1,18 +1,23 @@
+<!-- title -->
 <h1><%= @promo_details['title'] %></h1>
+<!-- description -->
 <p class="description">Description: <%= @promo_details['description'] %></p><br>
+<!-- current price -->
 <div class="current-price">
   <p class="inner-price">Price: <%= to_price(@promo_details['price']) %></p>
 </div><br>
+<!-- original price -->
 <div class="outer-old-price">
   <p class="old-price">Original Price: <%= to_price(@promo_details['original_price']) %></p>
 </div>
+<!-- saving % -->
 <div>
   <p class="savings">
     <%= percent_savings(@promo_details['original_price'],@promo_details['price']) %>% off
   </p>
 </div>
 <br><br><br>
-
+<!-- stripe button -->
 <%= form_tag charges_path do %>
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
