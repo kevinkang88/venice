@@ -12,6 +12,10 @@
   </p>
 </div>
 <br><br><br>
-<a href="#" class="btn btn-success webappcamp purchase'"><span class="glyphicon glyphicon-shopping-cart"></span> Buy Now </a>
 
-<a href='#' class='btn webappcamp purchase' data-promotion-id='{1}' data-title='{title}' data-amount='{}'>Learn to build this app</a>
+<%= form_tag charges_path do %>
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="A month's subscription"
+          data-amount="<%= @promo_details['price'] %>"></script>
+<% end %>
