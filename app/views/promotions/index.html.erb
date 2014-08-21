@@ -4,8 +4,18 @@
 
 
 <%# below is the erb.html above code currently showing the returned array at the end %>
+<div class="col-md-6">
+  <h1> Promotions </h1>
+  <% @all_promo_titles.each do |title,id| %>
+    <%= link_to(title,promotions_path(id),:remote => true, class:"promo-links") %><br>
+  <% end %>
+</div>
 
-<h1> Promotions </h1>
-<% @all_promo_titles.each do |title,id| %>
-  <%= link_to(title,promotions_path(id)) %><br>
-<% end %>
+<div class="col-md-6">
+<!-- if statement needed up there and locals and send data:D -->
+  <div id="details-box">
+      <% if @promo_details %>
+        <%= render(:partial => "/promotions/show",:locals=>{:hello => @promo_details}) %>
+      <% end %>
+  </div>
+</div>
