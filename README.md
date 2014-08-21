@@ -22,3 +22,4 @@ User is Able to see the list of current promotions, and purchase them
 * RESTFUL routing
 * Promotion model created to explicitly handle get requests to the API
 * Promotions#show partial that gets displayed in Index page using AJAX
+* Simple & responsive Design
