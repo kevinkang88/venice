@@ -5,6 +5,12 @@
 </div><br>
 <div class="outer-old-price">
   <p class="old-price">Original Price: <%= to_price(@promo_details['original_price']) %></p>
-</div><br><br>
+</div>
+<div>
+  <p class="savings">
+    <%= percent_savings(@promo_details['original_price'],@promo_details['price']) %>% off
+  </p>
+</div>
+<br><br>
 
 
