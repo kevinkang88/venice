@@ -7,4 +7,8 @@ module ApplicationHelper
   def to_price(integer)
     integer.to_s.scan(/./).insert(-3,'.').unshift('$').join
   end
+
+  def percent_savings(og_price,crnt_price)
+    (og_price - crnt_price) / og_price
+  end
 end
