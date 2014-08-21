@@ -1,10 +1,10 @@
 <h1><%= @promo_details['title'] %></h1>
 <p class="description">Description: <%= @promo_details['description'] %></p><br>
 <div class="current-price">
-  <p class="inner-price">Price: <%= @promo_details['price'] %></p>
+  <p class="inner-price">Price: <%= to_price(@promo_details['price']) %></p>
 </div><br>
 <div class="outer-old-price">
-  <p class="old-price">Original Price: <%= @promo_details['original_price'] %></p>
+  <p class="old-price">Original Price: <%= to_price(@promo_details['original_price']) %></p>
 </div><br><br>
 
 
