@@ -14,27 +14,3 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
-
-$(document).ready(function(){
-  // showDetailedPromo();
-});
-
-function showDetailedPromo(){
-  $('.promo-links').on('click',function(evt){
-    var promoId = $(this).attr('href').slice(12);
-    $.ajax({
-      url: "/promotions",
-      type: "GET",
-      dataType: "json",
-      data:{promoId:promoId}
-    }).done(function(data){
-      console.log(data);
-
-      // console.log('done :D');
-
-    }).fail(function(){
-      console.log('failed :[');
-    });
-  });
-
-}
