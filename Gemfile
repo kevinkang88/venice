@@ -4,6 +4,7 @@ gem 'rails', '3.2.18'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'unicorn'
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'therubyracer'
