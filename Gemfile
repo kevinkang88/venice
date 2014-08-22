@@ -8,7 +8,6 @@ gem 'unicorn'
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'therubyracer'
-gem 'jquery-rails'
 gem 'less-rails-bootstrap'
 gem 'json'
 gem 'pry'
